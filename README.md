@@ -44,13 +44,15 @@ In both cases we need to define multiple fields and then go about writing the sa
 
 ## Usage
 
-Gangplank's Ranges represent this pair and the values in between so you can simplify this process. The above examples could be rewritten as:
+Gangplank unites these start and end values under one concept: a Range. A Range represents not only the start and end but also the values between, providing useful methods for selection and iteration.
+
+Let's take a look at the previous examples implemented with Ranges:
 
 ```c#
 using Gangplank.Ranges;
 
 [SerializeField]
-FloatRange _scaleOffset;
+Vector3Range _scaleOffset;
 
 public void Start () {
     transform.localScale = _scaleOffset.Random();
@@ -76,9 +78,9 @@ Ranges also provide a way to simplify moving from one value to another, common i
 
 Recognize this code?
 ```c#
-IEnumerator Walk (Vector3 start, end) {
+IEnumerator Walk (Vector3 start, Vector3 end) {
     float timer = 0;
-    while(timer < 1f){
+    while(timer < 1f) {
         transform.position = Vector3.Lerp(start, end, timer);
         timer += Time.deltaTime;
         yield return null;
@@ -88,8 +90,19 @@ IEnumerator Walk (Vector3 start, end) {
 StartCoroutine(Walk(transform.position, target.position));
 ```
 
-You could do this instead:
+With a Range, you could refactor to:
+```c#
+IEnumerator Walk (Vector3 start, Vector3 end) {
+  Vector3Range path = new Vector3Range(start, end);
+  foreach(var position in path.Walk(() => Time.deltaTime)) {
+    transform.position = position;
+    yield return null;
+  }
+}
 
+StartCoroutine(Walk(transform.position, target.position));
+```
+Or go with a more declarative syntax:
 ```c#
 var path = new Vector3Range(transform.position, target.position);
 StartCoroutine(path.Walk((pos) => transform.position = pos, () => Time.deltaTime));
