@@ -58,7 +58,7 @@ public void OnClick () {
 }
 ```
 
-In both cases we need to define multiple fields and then go about writing the same boilerplate to find the value we want.
+In both cases we need to define multiple fields and then go about writing the same `random/interpolate` function to find the value we want.
 
 ## Usage
 
