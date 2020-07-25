@@ -66,7 +66,7 @@ ColorRange _colorOffset;
 private SpriteRenderer _renderer;
 
 public void OnClick () {
-    _renderer.color = _colorOffset.Random();_
+    _renderer.color = _colorOffset.Random();
 }
 ```
 
