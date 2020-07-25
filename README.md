@@ -17,7 +17,7 @@ After Unity installs the Package, you are good to go!
 ```c#
 using Gangplank.Ranges;
 
-FloatRange range = new FloatRange(0f, 5f);
+FloatRange range = new FloatRange(0f, 5f)
 
 range.Start               // 0
 range.End                 // 5
