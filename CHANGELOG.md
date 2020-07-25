@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [0.1.2] - 7/25/2020
+### Removed
+- node module directories mistakenly committed
+
 ## [0.1.1] - 7/25/2020
 ### Added
 - Test coverage for range values
@@ -13,5 +17,6 @@ All notable changes to this project will be documented in this file.
 - CHANGELOG with first release notes
 - Ranges for Floats, Colors, Vector2 and Vector3
 
+[0.1.2]: https://github.com/Catsuko/Gangplank/releases/tag/v0.1.2
 [0.1.1]: https://github.com/Catsuko/Gangplank/releases/tag/v0.1.1
 [0.0.1]: https://github.com/Catsuko/Gangplank/releases/tag/v0.0.1
