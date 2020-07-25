@@ -16,5 +16,11 @@ namespace Gangplank.Ranges
         {
             return Vector2.Lerp(Start, End, t);
         }
+
+        public override bool Contains(Vector2 value)
+        {
+            return value.x.IsWithin(Start.x, End.x) &&
+                   value.y.IsWithin(Start.y, End.y);
+        }
     }
 }

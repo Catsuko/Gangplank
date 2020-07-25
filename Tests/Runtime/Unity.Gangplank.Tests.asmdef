@@ -1,0 +1,17 @@
+{
+    "name": "Unity.Gangplank.Tests",
+    "references": [
+        "GUID:f1cc514a1fbedaa4c9d34f9c6d8191f5"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": []
+}
