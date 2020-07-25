@@ -70,7 +70,7 @@ Let's take a look at the previous examples implemented with Ranges:
 using Gangplank.Ranges;
 
 [SerializeField]
-Vector3Range _scaleOffset;
+private Vector3Range _scaleOffset;
 
 public void Start () {
     transform.localScale = _scaleOffset.Random();
@@ -81,7 +81,7 @@ public void Start () {
 using Gangplank.Ranges;
 
 [SerializeField]
-ColorRange _colorOffset;
+private ColorRange _colorOffset;
 [SerializeField]
 private SpriteRenderer _renderer;
 
