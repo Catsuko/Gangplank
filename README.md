@@ -1,7 +1,7 @@
 # Gangplank
 Provides simple and declarative representations of value ranges in Unity.
 
-## Installation
+## Getting Started
 
 Add the Gangplank Package by editing your `manifest.json` file to include the following line:
 
@@ -10,6 +10,24 @@ Add the Gangplank Package by editing your `manifest.json` file to include the fo
   "dependencies": {
     "com.catsuko.gangplank": "https://github.com/Catsuko/Gangplank.git"
 }
+```
+
+After Unity installs the Package, you are good to go!
+
+```c#
+using Gangplank.Ranges;
+
+FloatRange range = new FloatRange(0f, 5f);
+
+range.Start               // 0
+range.End                 // 5
+range.Contains(5)         // True
+range.Contains(50)        // False
+
+range.Random()            // Random value between 0 - 5
+range.Interpolate(0.5f)   // 2.5
+
+range.Walk(1f)            // Enumerable => 0f, 1f, 2f, 3f, 4f, 5f
 ```
 
 ## Why
