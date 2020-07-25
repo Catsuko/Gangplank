@@ -1,0 +1,17 @@
+{
+  "name": "com.catsuko.gangplank",
+  "version": "0.0.1",
+  "displayName": "Gangplank",
+  "description": "Gangplank provides simple, declarative representations of value ranges.",
+  "unity": "2019.1",
+  "keywords": [
+    "utilities",
+    "values",
+    "transition"
+  ],
+  "author": {
+    "name": "Lewis Reid",
+    "email": "lreidwilliams@gmail.com",
+    "url": "https://github.com/Catsuko/Gangplank"
+  }
+}
