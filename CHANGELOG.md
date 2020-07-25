@@ -6,5 +6,6 @@ All notable changes to this project will be documented in this file.
 - Package layout following Unity convention
 - README describing package purpose and usage
 - CHANGELOG with first release notes
+- Ranges for Floats, Colors, Vector2 and Vector3
 
 [0.0.1]: https://github.com/Catsuko/Gangplank/releases/tag/v0.0.1
