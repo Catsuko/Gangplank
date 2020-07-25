@@ -28,6 +28,7 @@ namespace Gangplank.Ranges
         }
 
         public abstract TValue Interpolate(float t);
+        public abstract bool Contains(TValue value);
  
         public TValue Random()
         {

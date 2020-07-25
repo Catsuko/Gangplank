@@ -18,5 +18,10 @@ namespace Gangplank.Ranges
         {
             return Mathf.Lerp(Start, End, t);
         }
+
+        public override bool Contains(float value)
+        {
+            return value.IsWithin(Start, End);
+        }
     }
 }
