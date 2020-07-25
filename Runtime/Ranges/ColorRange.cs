@@ -1,7 +1,9 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace Gangplank.Ranges
 {
+    [Serializable]
     public class ColorRange : Range<Color>
     {
         public ColorRange()

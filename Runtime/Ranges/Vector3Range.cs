@@ -1,7 +1,9 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace Gangplank.Ranges
 {
+    [Serializable]
     public class Vector3Range : Range<Vector3>
     {
         public Vector3Range()
