@@ -19,15 +19,15 @@ using Gangplank.Ranges;
 
 FloatRange range = new FloatRange(0f, 5f)
 
-range.Start               // 0
-range.End                 // 5
-range.Contains(5f)         // True
-range.Contains(50f)        // False
+range.Start                 // 0
+range.End                   // 5
+range.Contains(5f)          // True
+range.Contains(50f)         // False
 
-range.Random()            // Random value between 0 - 5
-range.Interpolate(0.5f)   // 2.5
+range.Random()              // Random value between 0 - 5
+range.Interpolate(0.5f)     // 2.5
 
-range.Walk(1f)            // Enumerable => 0f, 1f, 2f, 3f, 4f, 5f
+range.Walk(1f)              // Enumerable => 0f, 1f, 2f, 3f, 4f, 5f
 ```
 
 ## Why
